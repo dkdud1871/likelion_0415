@@ -1,0 +1,11 @@
+<head>
+
+    <title>my first portfolio</title>
+</head>
+<body>
+    <h1>home</h1>
+    <a href="/person/new">글쓰기</a>
+    {% for person in persons.all %}
+        <a href="/person/{{person.id}}">{{person.name}}</a>
+    {% endfor %}
+</body>

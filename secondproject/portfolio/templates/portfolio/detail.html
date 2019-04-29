@@ -1,0 +1,10 @@
+
+<body>
+    <h1>home</h1>
+    <a href="{% url 'edit' person.id %}">수정하기</a>
+    <a href="{% url 'delete' person.id %}">삭제하기</a>
+        <p>{{person.name}}</p>
+        <p>{{person.age}}</p>
+        <p>{{person.major}}</p>
+
+</body>
